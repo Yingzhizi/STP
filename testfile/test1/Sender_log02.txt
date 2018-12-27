@@ -1,0 +1,97 @@
+sender log file of the pDrop = 0.3, MWS = 500 bytes, MSS = 100 bytes, seed = 100, gamma = 4, and pDuplicate, pCorrupt, pOrder, MaxOrder, pDelay, MaxDelay all set to 0.
+
+snd                  0.00       S          0          0          0         
+rcv                  0.00       SA         0          0          1         
+snd                  0.00       A          1          0          1         
+drop                 0.00       D          1          100        1         
+snd                  0.00       D          101        100        1         
+snd                  0.00       D          201        100        1         
+snd                  0.00       D          301        100        1         
+drop                 0.00       D          401        100        1         
+rcv                  0.00       A          1          0          1         
+rcv/DA               0.01       A          1          0          1         
+rcv/DA               0.01       A          1          0          1         
+snd/RXT              1.70       D          1          100        1         
+rcv                  1.70       A          1          0          401       
+drop                 1.70       D          501        100        1         
+drop                 1.70       D          601        100        1         
+snd                  1.70       D          701        100        1         
+snd                  1.70       D          801        100        1         
+rcv/DA               1.70       A          1          0          401       
+rcv/DA               1.71       A          1          0          401       
+snd/RXT              3.40       D          401        100        1         
+rcv                  3.40       A          1          0          501       
+drop                 3.41       D          901        100        1         
+snd/RXT              6.00       D          501        100        1         
+rcv                  6.00       A          1          0          601       
+drop                 6.01       D          1001       100        1         
+snd/RXT              9.62       D          601        100        1         
+rcv                  9.62       A          1          0          901       
+snd                  9.62       D          1101       100        1         
+snd                  9.62       D          1201       100        1         
+drop                 9.62       D          1301       100        1         
+rcv/DA               9.62       A          1          0          901       
+rcv/DA               9.63       A          1          0          901       
+snd/RXT              11.32      D          901        100        1         
+rcv                  11.32      A          1          0          1001      
+snd                  11.32      D          1401       100        1         
+rcv/DA               11.32      A          1          0          1001      
+snd/RXT              13.02      D          1001       100        1         
+rcv                  13.02      A          1          0          1301      
+snd                  13.02      D          1501       100        1         
+snd                  13.02      D          1601       100        1         
+snd                  13.02      D          1701       100        1         
+rcv/DA               13.02      A          1          0          1301      
+rcv/DA               13.02      A          1          0          1301      
+rcv/DA               13.03      A          1          0          1301      
+snd/RXT              13.03      D          1301       100        1         
+rcv                  13.03      A          1          0          1801      
+snd                  13.03      D          1801       100        1         
+drop                 13.03      D          1901       100        1         
+snd                  13.03      D          2001       100        1         
+drop                 13.03      D          2101       100        1         
+drop                 13.03      D          2201       100        1         
+rcv                  13.03      A          1          0          1901      
+snd                  13.03      D          2301       100        1         
+rcv/DA               13.03      A          1          0          1901      
+rcv/DA               13.04      A          1          0          1901      
+snd/RXT              14.73      D          1901       100        1         
+rcv                  14.73      A          1          0          2101      
+snd                  14.74      D          2401       100        1         
+drop                 14.74      D          2501       100        1         
+rcv/DA               14.74      A          1          0          2101      
+snd/RXT              16.43      D          2101       100        1         
+rcv                  16.43      A          1          0          2201      
+snd                  16.43      D          2601       100        1         
+rcv/DA               16.43      A          1          0          2201      
+snd/RXT              18.13      D          2201       100        1         
+rcv                  18.13      A          1          0          2501      
+snd                  18.13      D          2701       100        1         
+snd                  18.13      D          2801       100        1         
+drop                 18.13      D          2901       100        1         
+rcv/DA               18.13      A          1          0          2501      
+rcv/DA               18.13      A          1          0          2501      
+snd/RXT              19.83      D          2501       100        1         
+rcv                  19.83      A          1          0          2901      
+drop                 19.83      D          3001       28         1         
+snd/RXT              22.43      D          2901       100        1         
+rcv                  22.43      A          1          0          3001      
+snd/RXT              26.04      D          3001       28         1         
+rcv                  26.04      A          1          0          3029      
+snd                  26.04      F          3029       0          1         
+rcv                  26.04      A          1          0          3030      
+rcv                  26.04      F          1          0          3030      
+snd                  26.04      A          3030       0          2         
+========================================================
+Size of the file (in Bytes) 3028
+Segments transmitted (including drop & RXT) 48
+Number of Segments handled by PLD 44
+Number of Segments dropped 13
+Number of Segments Corrupted 0
+Number of Segments Re-ordered 0
+Number of Segments Duplicated 0
+Number of Segments Delayed 0
+Number of Retransmissions due to TIMEOUT 12
+Number of FAST RETRANSMISSION 1
+Number of DUP ACKS received 16
+========================================================
